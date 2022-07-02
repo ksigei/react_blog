@@ -1,17 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import home
-import Home from './components/Blog';
+import Users from './components/Users';
+import Posts from './components/Posts';
+
 function App() {
   return (
-    <Router>
-      <Home />
-      {/* <Routes>
-        <Route exact path="/" element={<Rockets />} />
-        <Route path="/profile" element={<MyProfile />} />
-        <Route path="/missions" element={<Missions />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes> */}
-    </Router>
+    <div className="App">
+      <Users />
+      <Posts />
+    </div>
   );
 }
 
