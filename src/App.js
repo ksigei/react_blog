@@ -1,7 +1,11 @@
+import Users from './components/Users';
+import Posts from './components/Posts';
+
 function App() {
   return (
     <div className="App">
-      <h3>App</h3>
+      <Users />
+      <Posts />
     </div>
   );
 }
