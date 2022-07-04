@@ -1,11 +1,11 @@
-import Users from './components/Users';
-import Posts from './components/Posts';
+// import Header from './components/Header';
+import Home from './components/Home'
 
 function App() {
   return (
     <div className="App">
-      <Users />
-      <Posts />
+      {/* <Header /> */}
+      <Home />
     </div>
   );
 }
