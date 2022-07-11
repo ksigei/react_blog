@@ -17,6 +17,7 @@ const Post = () => {
 
   return (
     <div>
+      
       {posts.map((post) => (
         <article className="art-card" key={post.url}>
           <div className="">
