@@ -2,7 +2,7 @@ import React from "react";
 
 function Rightbar() {
   return (
-    <article className="">
+    <article className="is-desktop">
       <section className="section user-stat">
         <article className="media user-stat-img">
           <div className="media-content">

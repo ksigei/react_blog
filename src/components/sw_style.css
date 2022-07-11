@@ -1,20 +1,24 @@
 .sw_main {
-    display: flex; 
+    display: flex;
 }
+
 .col-left {
     width: 7%;
     padding: 1%;
 }
+
 .col-left-inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .col-left .brand img {
     width: 120px;
     height: 50px;
     margin-bottom: 1%;
 }
+
 .col-left .icons {
     display: flex;
     flex-direction: column;
@@ -22,6 +26,7 @@
     gap: 3vh;
     margin-top: 15vh;
 }
+
 .col-main {
     display: flex;
     flex-direction: column;
@@ -30,6 +35,7 @@
     border-right: 1px solid #ccc;
     padding: 2%;
 }
+
 .art-card .user-img img {
     width: 33px;
     height: 33px;
@@ -41,26 +47,31 @@
     margin-bottom: 20px;
     border-bottom: 1px solid #ccc;
     padding: 1%;
-    
+
 }
+
 .art-card .art-img img {
     width: auto;
-    height: 19vh;    
+    height: 19vh;
 }
+
 .art-card .art-title {
     font-size: 1.2em;
     font-weight: bold;
     padding: auto;
 }
+
 .art-card .level-right i {
-  font-size: larger;
+    font-size: larger;
 }
+
 .col-right {
     width: 22%;
 }
+
 .col-right .user-stat {
-/* blur background image */
-    background-image: url(https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    /* blur background image */
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/06/08/00/laptop-4906312_960_720.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,15 +84,57 @@
     align-items: center;
 
 }
+
 .col-right .user-stat img {
     width: 100%;
     height: 100%;
     padding: 3%;
 }
+
 .col-right .bg-blur {
     background-color: rgba(241, 241, 239, 0.5);
     height: 100%;
     border-radius: 10px;
     font-weight: bold;
     padding: 2%;
+}
+
+.sw_slider {
+    /* random image with writing like pens, books, article for background which is semi transparent*/
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/06/08/00/laptop-4906312_960_720.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2% 0;
+    /* border-bottom: 3px solid #ccc; */
+}
+.sw_title {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: auto;
+    /* color */
+    color: #fff;
+}
+.sw_subtitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: auto;
+    /* color */
+    color: #fff;
+}
+.sw_new_post {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.sw-mb {
+    margin-bottom: 2%;
 }

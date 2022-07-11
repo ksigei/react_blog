@@ -13,7 +13,23 @@ import {
     POST_COMMENTS,
     POST_REPLIES,
     POST_LIKES,
-    POST_EARNINGS
+    POST_EARNINGS,
+    DELETE_USERS,
+    DELETE_AUTHORS,
+    DELETE_POSTS,
+    DELETE_COMMENTS,
+    DELETE_REPLIES,
+    DELETE_LIKES,
+    DELETE_EARNINGS,
+    UPDATE_USERS,
+    UPDATE_AUTHORS,
+    UPDATE_POSTS,
+    UPDATE_COMMENTS,
+    UPDATE_REPLIES,
+    UPDATE_LIKES,
+    UPDATE_EARNINGS,
+    GET_USERS_BY_ID,
+
 } from '../Actions/types';
 
 const initialState = {
@@ -23,7 +39,8 @@ const initialState = {
     comments: [],
     replies: [],
     likes: [],
-    earnings: []
+    earnings: [],
+    userById: {},
 };
 
 // reducer using es6 syntax
@@ -33,6 +50,12 @@ export const reducer = (state = initialState, action) =>{
             return {
                 ...state,
                 users: action.payload
+            };
+        // user by id
+        case GET_USERS_BY_ID:
+            return {
+                ...state,
+                userById: action.pay
             };
         case GET_AUTHORS:
             return {

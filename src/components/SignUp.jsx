@@ -1,102 +1,45 @@
 import React from "react";
+import { Navigate } from 'react-router-dom';
+import { useSelector, useDispatch } from "react-redux";
+import { postUsers } from "../Redux/Actions/actions";
 
 function SignUp() {
+  // on submit, dispatch the action to post the user
+  const dispatch = useDispatch();
+  const onSubmit = (e) => {
+    e.preventDefault();
+    dispatch(postUsers(e.target.username.value, e.target.password.value));
+  };
+  // get the user from the state
+  const user = useSelector((state) => state.user);
+  // if user is not empty, redirect to the profile page
+  // if (user.id) {
+  //   return <Navigate to="/profile" />;
+  // }
+  // if user is empty, display the form
+
   return (
-    <div className="container">
-      <div className="field">
-        <label className="label">Name</label>
-        <div className="control">
-          <input className="input" type="text" placeholder="Text input" />
-        </div>
-      </div>
-
-      <div className="field">
-        <label className="label">Username</label>
-        <div className="control has-icons-left has-icons-right">
-          <input
-            className="input is-success"
-            type="text"
-            placeholder="Text input"
-            value="bulma"
-          />
-          <span className="icon is-small is-left">
-            <i className="fas fa-user"></i>
-          </span>
-          <span className="icon is-small is-right">
-            <i className="fas fa-check"></i>
-          </span>
-        </div>
-        <p className="help is-success">This username is available</p>
-      </div>
-
-      <div className="field">
-        <label className="label">Email</label>
-        <div className="control has-icons-left has-icons-right">
-          <input
-            className="input is-danger"
-            type="email"
-            placeholder="Email input"
-            value="hello@"
-          />
-          <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
-          </span>
-          <span className="icon is-small is-right">
-            <i className="fas fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <p className="help is-danger">This email is invalid</p>
-      </div>
-
-      <div className="field">
-        <label className="label">Subject</label>
-        <div className="control">
-          <div className="select">
-            <select>
-              <option>Select dropdown</option>
-              <option>With options</option>
-            </select>
+    // create a new user using name, email, password, and image and use onSubmit to post the user
+    <div>
+      <form onSubmit={onSubmit}>
+        <div className="field">
+          <label className="label">Username</label>
+          <div className="control">
+            <input className="input" type="text" name="username" />
           </div>
         </div>
-      </div>
-
-      <div className="field">
-        <label className="label">Message</label>
-        <div className="control">
-          <textarea className="textarea" placeholder="Textarea"></textarea>
+        <div className="field">
+          <label className="label">Password</label>
+          <div className="control">
+            <input className="input" type="password" name="password" />
+          </div>
         </div>
-      </div>
-
-      <div className="field">
-        <div className="control">
-          <label className="checkbox">
-            <input type="checkbox" />I agree to the{" "}
-            <a href="#">terms and conditions</a>
-          </label>
+        <div className="field">
+          <div className="control">
+            <button className="button is-link">Submit</button>
+          </div>
         </div>
-      </div>
-
-      <div className="field">
-        <div className="control">
-          <label className="radio">
-            <input type="radio" name="question" />
-            Yes
-          </label>
-          <label className="radio">
-            <input type="radio" name="question" />
-            No
-          </label>
-        </div>
-      </div>
-
-      <div className="field is-grouped">
-        <div className="control">
-          <button className="button is-link">Submit</button>
-        </div>
-        <div className="control">
-          <button className="button is-link is-light">Cancel</button>
-        </div>
-      </div>
+      </form>
     </div>
   );
 }
