@@ -1,10 +1,31 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
 .sw_main {
     display: flex;
 }
 
+.sw-100 {
+    width: 100%;
+}
+.sh-100 {
+    height: 100%;
+}
+
 .col-left {
     width: 7%;
+    height: 100%;
     padding: 1%;
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    border-right: 1px solid #ccc;
 }
 
 .col-left-inner {
@@ -30,10 +51,8 @@
 .col-main {
     display: flex;
     flex-direction: column;
-    width: 69%;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    padding: 2%;
+    width: 70%;
+    padding: 2% 2% 2% 10%;
 }
 
 .art-card .user-img img {
@@ -66,11 +85,14 @@
 }
 
 .col-right {
-    width: 22%;
+    width: 25%;
+    position: fixed;
+    overflow: auto;
+    right: 0;
+    border-left: 1px solid #ccc;
 }
 
 .col-right .user-stat {
-    /* blur background image */
     background-image: url(https://cdn.pixabay.com/photo/2020/03/06/08/00/laptop-4906312_960_720.jpg);
     background-size: cover;
     background-position: center;
@@ -99,6 +121,10 @@
     padding: 2%;
 }
 
+.no-scroll {
+    overflow: auto;
+}
+
 .sw_slider {
     /* random image with writing like pens, books, article for background which is semi transparent*/
     background-image: url(https://cdn.pixabay.com/photo/2020/03/06/08/00/laptop-4906312_960_720.jpg);
@@ -115,6 +141,7 @@
     margin: 0 0 2% 0;
     /* border-bottom: 3px solid #ccc; */
 }
+
 .sw_title {
     font-size: 2.5em;
     font-weight: bold;
@@ -122,6 +149,7 @@
     /* color */
     color: #fff;
 }
+
 .sw_subtitle {
     font-size: 1.2em;
     font-weight: bold;
@@ -129,6 +157,7 @@
     /* color */
     color: #fff;
 }
+
 .sw_new_post {
     display: flex;
     flex-direction: column;
@@ -137,4 +166,25 @@
 
 .sw-mb {
     margin-bottom: 2%;
+}
+
+
+.badge {
+    position:relative;
+}
+.badge[data-badge]:after {
+    content:attr(data-badge);
+    position:absolute;
+    top:-10px;
+    right:-10px;
+    font-size:.6em;
+    background:#008000;
+    color:#ffffff;
+    width:18px;height:18px;
+    text-align:center;
+    line-height:18px;
+    border-radius:50%;
+    box-shadow:0 0 1px #333;
+    font-family:'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: lighter;
 }

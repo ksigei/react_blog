@@ -7,21 +7,34 @@ import Users from "./components/Users";
 import NewPost from "./components/NewPost";
 import SignIn from "./components/SignIn";
 import Notifications from "./components/Notifications";
+import Bookmarks from "./components/Bookmarks";
+import Articles from "./components/Articles";
+
 import "./components/sw_style.css";
+import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/newpost" element={<NewPost />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/notifications" element={<Notifications />} />
-        </Routes>
-        <Rightbar />
+      <div className="App sw_main sh-100">
+        <div className="col-left no-scroll">
+          <Navbar />
+        </div>
+        <div className="col-main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/newpost" element={<NewPost />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/bookmarks" element={<Bookmarks />} />
+            <Route path="/articles" element={<Articles />} />
+
+          </Routes>
+        </div>
+        <div className="col-right">
+          <Rightbar />
+        </div>
       </div>
     </Router>
   );

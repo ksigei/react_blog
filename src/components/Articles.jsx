@@ -5,7 +5,7 @@ import Rightbar from "./Rightbar";
 import "./sw_style.css";
 
 // new post component based on new post form
-function Notifications() {
+function Articles() {
   return (
     <div>
       <div className="sw-100">
@@ -103,4 +103,4 @@ function Notifications() {
   );
 }
 
-export default Notifications;
+export default Articles;
