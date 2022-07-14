@@ -1,11 +1,15 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink } from "react-router-dom";
 import "./sw_style.css";
 
 function Navbar() {
   return (
     <nav className="">
-      <Link to="/" className="brand has-text-grey-dark" href="https://saucewire.com">
+      <Link
+        to="/"
+        className="brand has-text-grey-dark"
+        href="https://saucewire.com"
+      >
         <img src="../.././logo_sw.png" />
         <h3>Saucewire</h3>
       </Link>
@@ -33,6 +37,13 @@ function Navbar() {
         <NavLink to="/newpost" className="level-item">
           <span className="icon is-large">
             <i class="uil uil-plus has-text-grey-dark fa-2x"></i>
+          </span>
+        </NavLink>
+      </div>
+      <div className="accounts">
+        <NavLink to="/profile" className="level-item">
+          <span className="icon is-large">
+            <i class="uil uil-user has-text-link fa-2x"></i>
           </span>
         </NavLink>
       </div>

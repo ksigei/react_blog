@@ -9,6 +9,8 @@ import SignIn from "./components/SignIn";
 import Notifications from "./components/Notifications";
 import Bookmarks from "./components/Bookmarks";
 import Articles from "./components/Articles";
+import Profile from "./components/Profile";
+import Dashboard from "./components/Dashboard";
 
 import "./components/sw_style.css";
 import "./App.css";
@@ -29,7 +31,8 @@ function App() {
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/bookmarks" element={<Bookmarks />} />
             <Route path="/articles" element={<Articles />} />
-
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </div>
         <div className="col-right">

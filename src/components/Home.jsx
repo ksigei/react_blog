@@ -11,6 +11,7 @@ function Home() {
   return (
     <div>
       <Slider />
+
       <div className="tabs">
         <ul>
           <li className="is-active">
@@ -29,6 +30,11 @@ function Home() {
       </div>
       <Post />
       <Ad />
+      <Ad />
+      <Ad />
+
+      <Ad />
+
     </div>
   );
 }
