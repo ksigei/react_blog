@@ -2,7 +2,10 @@
 // use useffect, useselector
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getPosts, getUsers as getUserById } from "../Redux/Actions/actions";
+import TimeAgo from "react-timeago";
+import frenchStrings from "react-timeago/lib/language-strings/en";
+import buildFormatter from "react-timeago/lib/formatters/buildFormatter";
+import { getPosts, getUsers } from "../Redux/Actions/actions";
 
 // create component, get Posts from state and display list
 const Post = () => {
@@ -14,56 +17,51 @@ const Post = () => {
   useEffect(() => {
     if (posts.length === 0 && userById.length === 0) {
       dispatch(getPosts());
-      dispatch(getUserById());
+      dispatch(getUsers());
     }
-  }
-  , [posts, userById, dispatch]);
-  
-  // useEffect(() => {
-  //   if (posts.length === 0) {
-  //     dispatch(getPosts());
-  //     dispatch(getUserById());
-  //   }
-  // }, [dispatch]);
+  }, [posts, userById, dispatch]);
+  const formatter = buildFormatter(frenchStrings);
+  // user by id to get user name
+  const getUserName = (id) => {
+    const user = userById.find((user) => user.id === id);
+    return user ? user.username : "";
+  };
 
   return (
-    // if author === users.id, author is user.username and user.image ... use the logics to display the user info and image in the post page.
     <div>
-      {/* //loop through users and store so i can use it in the post page */}
-      {/* {userById.map((user) => (
-        <div key={user.id}>
-          <h1>{user.username}</h1>
-          <img src={user.image} alt="user" />
-        </div>
-      ))} */}
       {posts.map((post) => (
         <article className="art-card" key={post.id}>
           <div className="">
             <div className="">
-              <p>
-                <p className="is-flex">
+              <div>
+                <div className="is-flex">
                   <figure className="media-left">
                     <p className="image is-32x32 user-img">
                       <img
                         className="is-rounded"
                         // from the users array, find the user with the same id as the post.author
-
-                      />  
+                      />
                     </p>
                   </figure>
-                  {/* <small>{post.author.name}</small>{" "} */}
-                  //compare 
-                  <small>{post.created_at}</small>
-                </p>
+                  <div className="is-flex">
+                    <span className="user-name">
+                      {post.author.username}
+                    </span>
+                  </div>
+
+                  <small>
+                    <TimeAgo date={post.created_at} formatter={formatter} />
+                  </small>
+                </div>
                 <h3 className="art-title">{post.title}</h3>
-                <p>{post.content}</p>
-              </p>
+                <p>{post.excerpt}</p>
+              </div>
             </div>
             <nav className="level is-mobile">
               <div className="level-left">
                 <a className="level-item">
                   <span className="tag is-success is-light">
-                    {post.category}
+                    {post.category.name}
                   </span>
                 </a>
                 <a className="level-item">
@@ -105,8 +103,6 @@ const Post = () => {
         </article>
       ))}
     </div>
-
-
   );
 };
 export default Post;
