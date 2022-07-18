@@ -24,16 +24,20 @@ function Home() {
             <a>Videos</a>
           </li>
           <li>
+            <a>News</a>
+          </li>
+          <li>
+            <a>Marketplace</a>
+          </li>
+          <li>
+            <a>Trending</a>
+          </li>
+          <li>
             <a>Documents</a>
           </li>
         </ul>
       </div>
       <Post />
-      <Ad />
-      <Ad />
-      <Ad />
-
-      <Ad />
 
     </div>
   );

@@ -39,7 +39,7 @@ const Post = () => {
                     <p className="image is-32x32 user-img">
                       <img
                         className="is-rounded"
-                        // from the users array, find the user with the same id as the post.author
+                        src={post.image}
                       />
                     </p>
                   </figure>
@@ -53,8 +53,8 @@ const Post = () => {
                     <TimeAgo date={post.created_at} formatter={formatter} />
                   </small>
                 </div>
-                <h3 className="art-title">{post.title}</h3>
-                <p>{post.excerpt}</p>
+                <h4 className="art-title">{post.title}</h4>
+                <p className="art-excerpt">{post.excerpt}</p>
               </div>
             </div>
             <nav className="level is-mobile">
@@ -70,7 +70,7 @@ const Post = () => {
                 <a className="level-item">
                   <span className="has-text-grey">.</span>
                 </a>
-                <a className="level-item">
+                <a className="level-item desktop">
                   <span className="has-text-grey">
                     since you follow <strong>@kip</strong>
                   </span>
@@ -96,7 +96,7 @@ const Post = () => {
             </nav>
           </div>
           <section>
-            <figure className="image is-128x128 is-centered art-img">
+            <figure className="art-img">
               <img src={post.image} />
             </figure>
           </section>

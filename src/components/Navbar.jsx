@@ -4,10 +4,10 @@ import "./sw_style.css";
 
 function Navbar() {
   return (
-    <nav className="">
+    <nav>
       <Link
         to="/"
-        className="brand has-text-grey-dark"
+        className="brand has-text-grey-dark desktop"
         href="https://saucewire.com"
       >
         <img src="../.././logo_sw.png" />
@@ -15,7 +15,7 @@ function Navbar() {
       </Link>
       <div className="icons">
         <NavLink to="/" className="level-item">
-          <span className="icon is-large  badge" data-badge="27">
+          <span className="icon is-large">
             <i className="uil uil-estate has-text-grey-dark fa-2x"></i>
           </span>
         </NavLink>
@@ -34,19 +34,30 @@ function Navbar() {
             <i class="uil uil-newspaper has-text-grey-dark fa-2x"></i>
           </span>
         </NavLink>
+        <NavLink to="/articles" className="level-item">
+          <span className="icon is-large">
+            <i class="uil uil-shopping-bag has-text-grey-dark fa-2x"></i>
+          </span>
+        </NavLink>
         <NavLink to="/newpost" className="level-item">
           <span className="icon is-large">
             <i class="uil uil-plus has-text-grey-dark fa-2x"></i>
           </span>
         </NavLink>
-      </div>
-      <div className="accounts">
+        <NavLink to="/profile" className="level-item mobile">
+          <span className="icon is-large">
+            <i class="uil uil-user has-text-link fa-2x"></i>
+          </span>
+        </NavLink>
+        <div className="accounts">
         <NavLink to="/profile" className="level-item">
           <span className="icon is-large">
             <i class="uil uil-user has-text-link fa-2x"></i>
           </span>
         </NavLink>
       </div>
+      </div>
+     
     </nav>
   );
 }

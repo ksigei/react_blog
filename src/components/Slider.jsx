@@ -6,7 +6,7 @@ import "./sw_style.css";
 function Slider() {
   return (
     // use bulma css framework to create an appealing banner page
-    <div className="sw_main">
+    <div className="sw_main desktop">
       <div>
         {/* <div className="sw_slider">
         <div className="sw_slider_text">
