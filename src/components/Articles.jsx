@@ -1,9 +1,7 @@
 // new post component based on new post form
-import React from "react";
-import Post from "./Post";
-import Navbar from "./Navbar";
-import Rightbar from "./Rightbar";
-import "./sw_style.css";
+import React from 'react';
+import Post from './Post';
+import './sw_style.css';
 
 // new post component based on new post form
 function Articles() {

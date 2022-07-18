@@ -1,7 +1,6 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Navigate } from "react-router-dom";
-import { postUsers } from "../Redux/Actions/actions";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { postUsers } from '../Redux/Actions/actions';
 
 function SignIn() {
   const dispatch = useDispatch();

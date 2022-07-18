@@ -1,7 +1,7 @@
-import React from "react";
-import Post from "./Post";
-import Slider from "./Slider";
-import "./sw_style.css";
+import React from 'react';
+import Post from './Post';
+import Slider from './Slider';
+import './sw_style.css';
 function Home() {
   return (
     <div>

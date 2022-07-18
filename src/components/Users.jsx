@@ -1,8 +1,8 @@
 // get all users from redux and display list
 // use useffect, useselector
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getUsers } from "../Redux/Actions/actions";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getUsers } from '../Redux/Actions/actions';
 
 // create component, get users from state and display list
 const Users = () => {

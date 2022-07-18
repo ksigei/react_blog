@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./sw_style.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './sw_style.css';
 
 function Rightbar() {
   return (

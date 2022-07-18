@@ -1,6 +1,6 @@
-import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { postUsers } from "../Redux/Actions/actions";
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { postUsers } from '../Redux/Actions/actions';
 
 function SignUp() {
   // on submit, dispatch the action to post the user

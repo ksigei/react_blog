@@ -1,6 +1,5 @@
-import React from "react";
-
-import "./sw_style.css";
+import React from 'react';
+import './sw_style.css';
 
 function Slider() {
   return (

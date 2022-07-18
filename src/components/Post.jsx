@@ -1,11 +1,11 @@
 // get all Posts from redux and display list
 // use useffect, useselector
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import TimeAgo from "react-timeago";
-import frenchStrings from "react-timeago/lib/language-strings/en";
-import buildFormatter from "react-timeago/lib/formatters/buildFormatter";
-import { getPosts, getUsers } from "../Redux/Actions/actions";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import TimeAgo from 'react-timeago';
+import frenchStrings from 'react-timeago/lib/language-strings/en';
+import buildFormatter from 'react-timeago/lib/formatters/buildFormatter';
+import { getPosts, getUsers } from '../Redux/Actions/actions';
 
 // create component, get Posts from state and display list
 const Post = () => {

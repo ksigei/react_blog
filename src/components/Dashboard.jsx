@@ -1,6 +1,6 @@
 // new post component based on new post form
-import React from "react";
-import "./sw_style.css";
+import React from 'react';
+import './sw_style.css';
 
 // new post component based on new post form
 function Dashboard() {

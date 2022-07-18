@@ -1,8 +1,8 @@
 // new post component based on new post form
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import "./sw_style.css";
+import './sw_style.css';
 
 // new post component based on new post form
 function Profile() {
