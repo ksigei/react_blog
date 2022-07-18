@@ -1,32 +1,31 @@
 // get all users from redux and display list
 // use useffect, useselector
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { getUsers } from "../Redux/Actions/actions";
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getUsers } from '../Redux/Actions/actions';
 
 // create component, get users from state and display list
 const Users = () => {
-    const users = useSelector(state => state.users);
-    const dispatch = useDispatch();
-    
-    useEffect(() => {
-        if (users.length === 0) {
-        dispatch(getUsers());
-        }
-    }, []);
-    
-    return (
-        <div>
-        <h1>Users</h1>
-        <ul>
-            {users.map(user => (
-            <li key={user.url}>
-                <div>{user.username}</div>
-                <div>{user.email}</div>
-            </li>
-            ))}
-        </ul>
-        </div>
-    );
+  const users = useSelector((state) => state.users);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (users.length === 0) {
+      dispatch(getUsers());
     }
-    export default Users;
+  }, []);
+
+  // return users as list so i can use it in the post page
+  return (
+    <div>
+      {users.map((user) => (
+        <div key={user.id}>
+          <h1>{user.username}</h1>
+          <img src={user.image} alt="user" />
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Users;
