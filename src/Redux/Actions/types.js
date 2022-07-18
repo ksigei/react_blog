@@ -48,6 +48,3 @@ export const GET_COMMENTS_BY_ID = 'GET_COMMENTS_BY_ID';
 export const GET_REPLIES_BY_ID = 'GET_REPLIES_BY_ID';
 export const GET_LIKES_BY_ID = 'GET_LIKES_BY_ID';
 export const GET_EARNINGS_BY_ID = 'GET_EARNINGS_BY_ID';
-
- 
-

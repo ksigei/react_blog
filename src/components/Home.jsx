@@ -1,12 +1,7 @@
 import React from "react";
-import Users from "./Users";
 import Post from "./Post";
-import Navbar from "./Navbar";
-import Rightbar from "./Rightbar";
-import Ad from "./Ad";
 import Slider from "./Slider";
 import "./sw_style.css";
-import { render } from "react-dom";
 function Home() {
   return (
     <div>

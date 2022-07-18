@@ -1,5 +1,4 @@
 import React from "react";
-import { Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
 import { postUsers } from "../Redux/Actions/actions";
 

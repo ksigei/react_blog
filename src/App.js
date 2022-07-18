@@ -1,19 +1,19 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Rightbar from "./components/Rightbar";
-import Users from "./components/Users";
-import NewPost from "./components/NewPost";
-import SignIn from "./components/SignIn";
-import Notifications from "./components/Notifications";
-import Bookmarks from "./components/Bookmarks";
-import Articles from "./components/Articles";
-import Profile from "./components/Profile";
-import Dashboard from "./components/Dashboard";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Rightbar from './components/Rightbar';
+import Users from './components/Users';
+import NewPost from './components/NewPost';
+import SignIn from './components/SignIn';
+import Notifications from './components/Notifications';
+import Bookmarks from './components/Bookmarks';
+import Articles from './components/Articles';
+import Profile from './components/Profile';
+import Dashboard from './components/Dashboard';
 
-import "./components/sw_style.css";
-import "./App.css";
+import './components/sw_style.css';
+import './App.css';
 
 function App() {
   return (
