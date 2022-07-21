@@ -29,7 +29,7 @@ import {
   // UPDATE_EARNINGS,
 } from './types';
 // base url for api from django
-const baseUrl = 'http://localhost:8000/';
+const baseUrl = 'https://s-w-c.herokuapp.com';
 
 export const getUsers = () => (dispatch) => {
   fetch(`${baseUrl}users/`)

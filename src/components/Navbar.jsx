@@ -34,11 +34,11 @@ function Navbar() {
             <i className="uil uil-newspaper has-text-grey-dark fa-2x" />
           </span>
         </NavLink>
-        <NavLink to="/articles" className="level-item">
+        {/* <NavLink to="/articles" className="level-item">
           <span className="icon is-large">
             <i className="uil uil-shopping-bag has-text-grey-dark fa-2x" />
           </span>
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/newpost" className="level-item">
           <span className="icon is-large">
             <i className="uil uil-plus has-text-grey-dark fa-2x" />
