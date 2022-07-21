@@ -14,26 +14,26 @@ function Slider() {
           </p>
         </div>
       </div> */}
-      <div id="slider">
-        <figure>
-          <img
-            src="https://cdn.pixabay.com/photo/2022/05/24/04/38/study-7217599_960_720.jpg"
-            alt="sw_sliders"
-          />
-          <img
-            src="https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg"
-            alt="sw_sliders"
-          />
-          <img
-            src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593357_960_720.jpg"
-            alt="sw_sliders"
-          />
-          <img
-            src="https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_960_720.jpg"
-            alt="sw_sliders"
-          />
-        </figure>
-      </div>
+        <div id="slider">
+          <figure>
+            <img
+              src="https://cdn.pixabay.com/photo/2022/05/24/04/38/study-7217599_960_720.jpg"
+              alt="sw_sliders"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703_960_720.jpg"
+              alt="sw_sliders"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2015/01/08/18/29/entrepreneur-593357_960_720.jpg"
+              alt="sw_sliders"
+            />
+            <img
+              src="https://cdn.pixabay.com/photo/2015/02/02/11/08/office-620817_960_720.jpg"
+              alt="sw_sliders"
+            />
+          </figure>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { postUsers } from '../Redux/Actions/actions';
 
 function SignIn() {
@@ -8,7 +8,7 @@ function SignIn() {
     e.preventDefault();
     dispatch(postUsers(e.target.username.value, e.target.password.value));
   };
-  const user = useSelector((state) => state.user);
+  // const user = useSelector((state) => state.user);
   // if (user.id) {
   //   return <Navigate to="/profile" />;
   // }
@@ -16,26 +16,36 @@ function SignIn() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <form class="box">
-          <div class="field">
-            <label class="label">Email</label>
-            <div class="control">
-              <input
-                class="input"
-                type="email"
-                placeholder="e.g. me@example.com"
-              />
-            </div>
+        <form className="box">
+          <div className="field">
+            <label htmlFor="email" className="label">
+              Email
+              <div id="email" className="control">
+                <input
+                  className="input"
+                  type="email"
+                  placeholder="e.g. me@example.com"
+                />
+              </div>
+            </label>
           </div>
 
-          <div class="field">
-            <label class="label">Password</label>
-            <div class="control">
-              <input class="input" type="password" placeholder="********" />
-            </div>
+          <div className="field">
+            <label htmlFor="password" className="label">
+              Password
+              <div id="password" className="control">
+                <input
+                  className="input"
+                  type="password"
+                  placeholder="********"
+                />
+              </div>
+            </label>
           </div>
 
-          <button class="button is-primary">Sign in</button>
+          <button className="button is-primary" name="button" type="button">
+            Sign in
+          </button>
         </form>
       </form>
     </div>

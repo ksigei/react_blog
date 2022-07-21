@@ -1,6 +1,6 @@
 // new post component based on new post form
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import './sw_style.css';
 
@@ -13,21 +13,30 @@ function Profile() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <a>Preview</a>
+                <NavLink to="#">Preview</NavLink>
               </li>
               <li>
-                <a>Edit</a>
+                <NavLink to="#">Edit</NavLink>
               </li>
             </ul>
           </div>
           <div className="notifications">
-            <div class="notification is-warning">
-              <button class="delete"></button>
-              <strong>Congratulations!</strong>,<a>@Kiprono</a> you have reached
-              500 Followers and 250 Following. It now time to monetize your
-              account.
-              <Link to="/dashboard" class="buttons">
-                <button class="button is-link is-light">Dashboard</button>
+            <div className="notification is-warning">
+              <button className="delete" name="button" type="button">
+                btn
+              </button>
+              <strong>Congratulations!</strong>
+              <NavLink to="#">@Kiprono</NavLink>
+              you have reached 500 Followers and 250 Following. It now time to
+              monetize your account.
+              <Link to="/dashboard" className="buttons">
+                <button
+                  className="button is-link is-light"
+                  name="button"
+                  type="button"
+                >
+                  Dashboard
+                </button>
               </Link>
             </div>
             <article className="media">
@@ -42,6 +51,7 @@ function Profile() {
                               <img
                                 className="is-rounded"
                                 src="https://cdn.pixabay.com/photo/2021/10/11/11/12/countryside-6700296_960_720.jpg"
+                                alt="Saucewire images"
                               />
                             </figure>
                           </div>

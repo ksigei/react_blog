@@ -35,7 +35,7 @@ function SignUp() {
         </div>
         <div className="field">
           <div className="control">
-            <button className="button is-link">Submit</button>
+            <button className="button is-link" name="button" type="button">Submit</button>
           </div>
         </div>
       </form>

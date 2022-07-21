@@ -1,5 +1,6 @@
 // new post component based on new post form
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Post from './Post';
 import './sw_style.css';
 
@@ -12,31 +13,31 @@ function Articles() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <a>All</a>
+                <NavLink to="#">All</NavLink>
               </li>
               <li>
-                <a>Sports</a>
+                <NavLink to="#">Sports</NavLink>
               </li>
               <li>
-                <a>Politics</a>
+                <NavLink to="#">Politics</NavLink>
               </li>
               <li>
-                <a>Science</a>
+                <NavLink to="#">Science</NavLink>
               </li>
               <li>
-                <a>Education</a>
+                <NavLink to="#">Education</NavLink>
               </li>
               <li>
-                <a>Tech</a>
+                <NavLink to="#">Tech</NavLink>
               </li>
               <li>
-                <a>Movies</a>
+                <NavLink to="#">Movies</NavLink>
               </li>
               <li>
-                <a>Conspirancy</a>
+                <NavLink to="#">Conspirancy</NavLink>
               </li>
               <li>
-                <a>Religion</a>
+                <NavLink to="#">Religion</NavLink>
               </li>
             </ul>
           </div>
