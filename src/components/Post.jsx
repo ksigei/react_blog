@@ -1,6 +1,7 @@
 // get all Posts from redux and display list
 // use useffect, useselector
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import TimeAgo from 'react-timeago';
 import frenchStrings from 'react-timeago/lib/language-strings/en';
@@ -37,7 +38,11 @@ const Post = () => {
                 <div className="is-flex">
                   <figure className="media-left">
                     <p className="image is-32x32 user-img">
-                      <img className="is-rounded" src={post.image} />
+                      <img
+                        className="is-rounded"
+                        src={post.image}
+                        alt="Saucewire"
+                      />
                     </p>
                   </figure>
                   <div className="is-flex">
@@ -54,45 +59,46 @@ const Post = () => {
             </div>
             <nav className="level is-mobile">
               <div className="level-left">
-                <a className="level-item">
+                <NavLink className="level-item">
                   <span className="tag is-success is-light">
                     {post.category.name}
                   </span>
-                </a>
-                <a className="level-item">
+                </NavLink>
+                <NavLink className="level-item">
                   <span className="has-text-grey">3 min read</span>
-                </a>
-                <a className="level-item">
+                </NavLink>
+                <NavLink className="level-item">
                   <span className="has-text-grey">.</span>
-                </a>
-                <a className="level-item desktop">
+                </NavLink>
+                <NavLink className="level-item desktop">
                   <span className="has-text-grey">
-                    since you follow <strong>@kip</strong>
+                    since you follow
+                    <strong>@kip</strong>
                   </span>
-                </a>
+                </NavLink>
               </div>
               <div className="level-right">
-                <a className="level-item">
+                <NavLink className="level-item">
                   <span className="icon">
                     <i className="uil uil-bookmark has-text-grey-dark" />
                   </span>
-                </a>
-                <a className="level-item">
+                </NavLink>
+                <NavLink className="level-item">
                   <span className="icon">
                     <i className="uil uil-share has-text-grey-dark" />
                   </span>
-                </a>
-                <a className="level-item">
+                </NavLink>
+                <NavLink className="level-item">
                   <span className="icon">
                     <i className="uil uil-ellipsis-h has-text-grey-dark" />
                   </span>
-                </a>
+                </NavLink>
               </div>
             </nav>
           </div>
           <section>
             <figure className="art-img">
-              <img src={post.image} />
+              <img src={post.image} alt="Saucewire posts" />
             </figure>
           </section>
         </article>
