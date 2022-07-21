@@ -11,16 +11,16 @@ function Notifications() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <NavLink>Articles</NavLink>
+                <NavLink to="#">Articles</NavLink>
               </li>
               <li>
-                <NavLink>Music</NavLink>
+                <NavLink to="#">Music</NavLink>
               </li>
               <li>
-                <NavLink>Videos</NavLink>
+                <NavLink to="#">Videos</NavLink>
               </li>
               <li>
-                <NavLink>Documents</NavLink>
+                <NavLink to="#">Documents</NavLink>
               </li>
             </ul>
           </div>
@@ -33,7 +33,7 @@ function Notifications() {
                       btn
                     </button>
                     <strong>Congratulations!</strong>
-                    <NavLink>@Kiprono</NavLink>
+                    <NavLink to="#">@Kiprono</NavLink>
                     you have reached 500 Followers and 250 Following. It now
                     time to monetize your account.
                     <Link to="/dashboard" className="buttons">

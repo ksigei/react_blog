@@ -59,18 +59,18 @@ const Post = () => {
             </div>
             <nav className="level is-mobile">
               <div className="level-left">
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="tag is-success is-light">
                     {post.category.name}
                   </span>
                 </NavLink>
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="has-text-grey">3 min read</span>
                 </NavLink>
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="has-text-grey">.</span>
                 </NavLink>
-                <NavLink className="level-item desktop">
+                <NavLink to="#" className="level-item desktop">
                   <span className="has-text-grey">
                     since you follow
                     <strong>@kip</strong>
@@ -78,17 +78,17 @@ const Post = () => {
                 </NavLink>
               </div>
               <div className="level-right">
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="icon">
                     <i className="uil uil-bookmark has-text-grey-dark" />
                   </span>
                 </NavLink>
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="icon">
                     <i className="uil uil-share has-text-grey-dark" />
                   </span>
                 </NavLink>
-                <NavLink className="level-item">
+                <NavLink to="#" className="level-item">
                   <span className="icon">
                     <i className="uil uil-ellipsis-h has-text-grey-dark" />
                   </span>

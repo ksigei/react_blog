@@ -11,16 +11,16 @@ function NewPost() {
         <div className="tabs">
           <ul>
             <li className="is-active">
-              <NavLink>Articles</NavLink>
+              <NavLink to="#">Articles</NavLink>
             </li>
             <li>
-              <NavLink>Music</NavLink>
+              <NavLink to="#">Music</NavLink>
             </li>
             <li>
-              <NavLink>Videos</NavLink>
+              <NavLink to="#">Videos</NavLink>
             </li>
             <li>
-              <NavLink>Documents</NavLink>
+              <NavLink to="#">Documents</NavLink>
             </li>
           </ul>
         </div>
@@ -61,7 +61,7 @@ function NewPost() {
           <label className="checkbox sw-mb">
             <input type="checkbox" />
             I agree to the
-            <NavLink>terms and conditions</NavLink>
+            <NavLink to="#">terms and conditions</NavLink>
           </label>
           <button className="button is-warning is-medium is-responsive" name="button" type="button">
             Submit

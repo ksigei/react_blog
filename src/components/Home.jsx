@@ -13,25 +13,25 @@ function Home() {
       <div className="tabs">
         <ul>
           <li className="is-active">
-            <NavLink>Articles</NavLink>
+            <NavLink to="#">Articles</NavLink>
           </li>
           <li>
-            <NavLink>Music</NavLink>
+            <NavLink to="#">Music</NavLink>
           </li>
           <li>
-            <NavLink>Videos</NavLink>
+            <NavLink to="#">Videos</NavLink>
           </li>
           <li>
-            <NavLink>News</NavLink>
+            <NavLink to="#">News</NavLink>
           </li>
           <li>
-            <NavLink>Marketplace</NavLink>
+            <NavLink to="#">Marketplace</NavLink>
           </li>
           <li>
-            <NavLink>Trending</NavLink>
+            <NavLink to="#">Trending</NavLink>
           </li>
           <li>
-            <NavLink>Documents</NavLink>
+            <NavLink to="#">Documents</NavLink>
           </li>
         </ul>
       </div>
