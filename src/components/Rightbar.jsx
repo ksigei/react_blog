@@ -1,32 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './sw_style.css';
 
 function Rightbar() {
   return (
     <div className="">
       <article className="">
-        <Link to="profile"></Link>
-
-        <section className="section">
-          <div className="field has-addons">
-            <div className="control">
-              <input
-                className="input"
-                type="text"
-                placeholder="Search"
-                onChange={(e) => {
-                  console.log(e.target.value);
-                }}
-              />
+        <Link to="profile">
+          <section className="section">
+            <div className="field has-addons">
+              <div className="control">
+                <input
+                  className="input"
+                  type="text"
+                  placeholder="Search"
+                  onChange={(e) => {
+                    console.log(e.target.value);
+                  }}
+                />
+              </div>
+              <div className="control">
+                <NavLink to="#" className="button is-link is-light">
+                  <i className="fa fa-search"></i>
+                </NavLink>
+              </div>
             </div>
-            <div className="control">
-              <a className="button is-link is-light">
-                <i className="fa fa-search"></i>
-              </a>
-            </div>
-          </div>
-        </section>
+          </section>
+        </Link>
         <section className="section">
           <div>
             <h3 className="heading">Topics</h3>
@@ -100,10 +100,13 @@ function Rightbar() {
         <footer className="sw_footer">
           <div className="content has-text-centered">
             <p>
-              <strong>Saucewire</strong> by <a href="#">SaucewireInc</a>. Our
-              terms of services
-              <a href="#">Terms of service</a>. The website content is licensed{" "}
-              <a href="#">license</a>.
+              <strong>Saucewire</strong>
+              by
+              <NavLink to="#">SaucewireInc.</NavLink>
+              Our terms of services
+              <NavLink to="#">Terms of service.</NavLink>
+              The website content is licensed
+              <NavLink to="#">license</NavLink>
             </p>
           </div>
         </footer>
