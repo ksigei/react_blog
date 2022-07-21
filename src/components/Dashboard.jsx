@@ -1,5 +1,6 @@
 // new post component based on new post form
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './sw_style.css';
 
 // new post component based on new post form
@@ -11,16 +12,16 @@ function Dashboard() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <a>Articles</a>
+                <NavLink to="#">NavLinkrticles</NavLink>
               </li>
               <li>
-                <a>Music</a>
+                <NavLink to="#">Music</NavLink>
               </li>
               <li>
-                <a>Videos</a>
+                <NavLink to="#">Videos</NavLink>
               </li>
               <li>
-                <a>Documents</a>
+                <NavLink to="#">Documents</NavLink>
               </li>
             </ul>
           </div>
@@ -29,13 +30,17 @@ function Dashboard() {
               <div className="media-content">
                 <div className="content">
                   <div className="notification is-warning">
-                    <button className="delete"></button>
-                    <strong>@Kiprono</strong> welcome to your dashboard. You can now track records of your work here.
-                    feel free to seek
-                    <a>help</a> from our team incase of any issue.
+                    <button className="delete" name="button" type="button">
+                      btn
+                    </button>
+                    <strong>@Kiprono</strong>
+                    welcome to your dashboard. You can now track records of your
+                    work here. feel free to seek
+                    <NavLink to="#">help</NavLink>
+                    from our team incase of any issue.
                   </div>
-                  <h1 class="title">Posts Statistics</h1>
-                  <table class="table table is-bordered is-striped is-hoverable is-fullwidth">
+                  <h1 className="title">Posts Statistics</h1>
+                  <table className="table table is-bordered is-striped is-hoverable is-fullwidth">
                     <thead>
                       <tr>
                         <th>No.</th>

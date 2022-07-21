@@ -1,7 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Post from './Post';
 import Slider from './Slider';
+
 import './sw_style.css';
+
 function Home() {
   return (
     <div>
@@ -10,30 +13,29 @@ function Home() {
       <div className="tabs">
         <ul>
           <li className="is-active">
-            <a>Articles</a>
+            <NavLink>Articles</NavLink>
           </li>
           <li>
-            <a>Music</a>
+            <NavLink>Music</NavLink>
           </li>
           <li>
-            <a>Videos</a>
+            <NavLink>Videos</NavLink>
           </li>
           <li>
-            <a>News</a>
+            <NavLink>News</NavLink>
           </li>
           <li>
-            <a>Marketplace</a>
+            <NavLink>Marketplace</NavLink>
           </li>
           <li>
-            <a>Trending</a>
+            <NavLink>Trending</NavLink>
           </li>
           <li>
-            <a>Documents</a>
+            <NavLink>Documents</NavLink>
           </li>
         </ul>
       </div>
       <Post />
-
     </div>
   );
 }

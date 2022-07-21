@@ -1,5 +1,6 @@
 // new post component based on new post form
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './sw_style.css';
 
 // new post component based on new post form
@@ -11,16 +12,16 @@ function Bookmarks() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <a>Articles</a>
+                <NavLink to="#">Articles</NavLink>
               </li>
               <li>
-                <a>Music</a>
+                <NavLink to="#">Music</NavLink>
               </li>
               <li>
-                <a>Videos</a>
+                <NavLink to="#">Videos</NavLink>
               </li>
               <li>
-                <a>Documents</a>
+                <NavLink to="#">Documents</NavLink>
               </li>
             </ul>
           </div>
@@ -29,67 +30,20 @@ function Bookmarks() {
               <div className="media-content">
                 <div className="content">
                   <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
+                    <button className="delete" name="button" type="button">
+                      btn
+                    </button>
+                    <strong>Congratulations!</strong>
+                    <Link to="/profile">
+                      @Kiprono
+                    </Link>
+                    you have reached 500 Followers and 250 Following. It now
+                    time to monetize your account.
+                    <Link to="/dashboard" className="buttons">
+                      <button className="button is-link is-light" type="button" name="button">
+                        Dashboard
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -22,10 +22,10 @@ const Post = () => {
   }, [posts, userById, dispatch]);
   const formatter = buildFormatter(frenchStrings);
   // user by id to get user name
-  const getUserName = (id) => {
-    const user = userById.find((user) => user.id === id);
-    return user ? user.username : "";
-  };
+  // const getUserName = (id) => {
+  //   const user = userById.find((user) => user.id === id);
+  //   return user ? user.username : "";
+  // };
 
   return (
     <div>
@@ -37,16 +37,11 @@ const Post = () => {
                 <div className="is-flex">
                   <figure className="media-left">
                     <p className="image is-32x32 user-img">
-                      <img
-                        className="is-rounded"
-                        src={post.image}
-                      />
+                      <img className="is-rounded" src={post.image} />
                     </p>
                   </figure>
                   <div className="is-flex">
-                    <span className="user-name">
-                      {post.author.username}
-                    </span>
+                    <span className="user-name">{post.author.username}</span>
                   </div>
 
                   <small>
@@ -79,17 +74,17 @@ const Post = () => {
               <div className="level-right">
                 <a className="level-item">
                   <span className="icon">
-                    <i className="uil uil-bookmark has-text-grey-dark"></i>
+                    <i className="uil uil-bookmark has-text-grey-dark" />
                   </span>
                 </a>
                 <a className="level-item">
                   <span className="icon">
-                    <i className="uil uil-share has-text-grey-dark"></i>
+                    <i className="uil uil-share has-text-grey-dark" />
                   </span>
                 </a>
                 <a className="level-item">
                   <span className="icon">
-                    <i className="uil uil-ellipsis-h has-text-grey-dark"></i>
+                    <i className="uil uil-ellipsis-h has-text-grey-dark" />
                   </span>
                 </a>
               </div>

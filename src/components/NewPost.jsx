@@ -1,5 +1,6 @@
 // new post component based on new post form
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './sw_style.css';
 
 // new post component based on new post form
@@ -10,16 +11,16 @@ function NewPost() {
         <div className="tabs">
           <ul>
             <li className="is-active">
-              <a>Articles</a>
+              <NavLink>Articles</NavLink>
             </li>
             <li>
-              <a>Music</a>
+              <NavLink>Music</NavLink>
             </li>
             <li>
-              <a>Videos</a>
+              <NavLink>Videos</NavLink>
             </li>
             <li>
-              <a>Documents</a>
+              <NavLink>Documents</NavLink>
             </li>
           </ul>
         </div>
@@ -45,7 +46,7 @@ function NewPost() {
               <input className="file-input" type="file" name="photo" />
               <span className="file-cta">
                 <span className="file-icon">
-                  <i className="fas fa-cloud-upload-alt"></i>
+                  <i className="fas fa-cloud-upload-alt" />
                 </span>
                 <span className="file-label">Cover photo</span>
               </span>
@@ -56,12 +57,13 @@ function NewPost() {
             placeholder="10 lines of textarea"
             rows="10"
             sw-mb
-          ></textarea>
+          />
           <label className="checkbox sw-mb">
-            <input type="checkbox" />I agree to the{" "}
-            <a href="#">terms and conditions</a>
+            <input type="checkbox" />
+            I agree to the
+            <NavLink>terms and conditions</NavLink>
           </label>
-          <button class="button is-warning is-medium is-responsive">
+          <button className="button is-warning is-medium is-responsive" name="button" type="button">
             Submit
           </button>
         </div>

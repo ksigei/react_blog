@@ -1,5 +1,6 @@
 // new post component based on new post form
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './sw_style.css';
 
 // new post component based on new post form
@@ -11,16 +12,16 @@ function Notifications() {
           <div className="tabs">
             <ul>
               <li className="is-active">
-                <a>Articles</a>
+                <NavLink>Articles</NavLink>
               </li>
               <li>
-                <a>Music</a>
+                <NavLink>Music</NavLink>
               </li>
               <li>
-                <a>Videos</a>
+                <NavLink>Videos</NavLink>
               </li>
               <li>
-                <a>Documents</a>
+                <NavLink>Documents</NavLink>
               </li>
             </ul>
           </div>
@@ -29,67 +30,15 @@ function Notifications() {
               <div className="media-content">
                 <div className="content">
                   <div className="notification is-warning">
-                    <button className="delete"></button>
+                    <button className="delete" name="button" type="button">
+                      btn
+                    </button>
                     Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
+                    elit lorem ipsum dolor.
                     <strong>Pellentesque risus mi</strong>, tempus quis placerat
                     ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
-                  </div>
-                  <div className="notification is-warning">
-                    <button className="delete"></button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.{" "}
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum{" "}
-                    <a>felis venenatis</a> efficitur.
+                    fringilla. Nullam gravida purus diam, et dictum
+                    <NavLink>felis venenatis</NavLink> efficitur.
                   </div>
                 </div>
               </div>
