@@ -1,6 +1,5 @@
-// new post component based on new post form
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './sw_style.css';
 
 // new post component based on new post form
@@ -33,12 +32,19 @@ function Notifications() {
                     <button className="delete" name="button" type="button">
                       btn
                     </button>
-                    Primar lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit lorem ipsum dolor.
-                    <strong>Pellentesque risus mi</strong>, tempus quis placerat
-                    ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet
-                    fringilla. Nullam gravida purus diam, et dictum
-                    <NavLink>felis venenatis</NavLink> efficitur.
+                    <strong>Congratulations!</strong>
+                    <NavLink>@Kiprono</NavLink>
+                    you have reached 500 Followers and 250 Following. It now
+                    time to monetize your account.
+                    <Link to="/dashboard" className="buttons">
+                      <button
+                        className="button is-link is-light"
+                        name="button"
+                        type="button"
+                      >
+                        Dashboard
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
