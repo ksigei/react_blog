@@ -21,7 +21,7 @@ function Rightbar() {
               </div>
               <div className="control">
                 <NavLink to="#" className="button is-link is-light">
-                  <i className="fa fa-search"></i>
+                  <i className="fa fa-search" />
                 </NavLink>
               </div>
             </div>
