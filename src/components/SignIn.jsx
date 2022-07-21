@@ -18,24 +18,34 @@ function SignIn() {
       <form onSubmit={onSubmit}>
         <form className="box">
           <div className="field">
-            <label className="label">Email</label>
-            <div className="control">
-              <input
-                className="input"
-                type="email"
-                placeholder="e.g. me@example.com"
-              />
-            </div>
+            <label htmlFor="email" className="label">
+              Email
+              <div id="email" className="control">
+                <input
+                  className="input"
+                  type="email"
+                  placeholder="e.g. me@example.com"
+                />
+              </div>
+            </label>
           </div>
 
           <div className="field">
-            <label className="label">Password</label>
-            <div className="control">
-              <input className="input" type="password" placeholder="********" />
-            </div>
+            <label htmlFor="password" className="label">
+              Password
+              <div id="password" className="control">
+                <input
+                  className="input"
+                  type="password"
+                  placeholder="********"
+                />
+              </div>
+            </label>
           </div>
 
-          <button className="button is-primary" name="button" type="button">Sign in</button>
+          <button className="button is-primary" name="button" type="button">
+            Sign in
+          </button>
         </form>
       </form>
     </div>
