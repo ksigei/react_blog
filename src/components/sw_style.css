@@ -420,7 +420,7 @@
     .icons {
         display: flex;
         justify-content: space-between;
-        gap: 5vw;
+        gap: 4vw;
         align-items: center;
         bottom: 0;
         /* margin-bottom: -1.5vh; */
