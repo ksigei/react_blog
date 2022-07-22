@@ -16,7 +16,7 @@ function SignIn() {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <form className="box">
+        <div className="box">
           <div className="field">
             <label htmlFor="email" className="label">
               Email
@@ -46,7 +46,7 @@ function SignIn() {
           <button className="button is-primary" name="button" type="button">
             Sign in
           </button>
-        </form>
+        </div>
       </form>
     </div>
   );

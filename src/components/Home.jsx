@@ -11,26 +11,26 @@ function Home() {
       <Slider />
 
       <div className="tabs">
-        <ul>
-          <li className="is-active">
+        <ul className="tags">
+          <li className="is-active tag is-link is-light">
             <NavLink to="#">Articles</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">Music</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">Videos</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">News</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">Marketplace</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">Trending</NavLink>
           </li>
-          <li>
+          <li className="tag is-link is-light">
             <NavLink to="#">Documents</NavLink>
           </li>
         </ul>

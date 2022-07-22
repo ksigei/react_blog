@@ -32,7 +32,7 @@ const Post = () => {
     <div>
       {posts.map((post) => (
         <article className="art-card" key={post.id}>
-          <div className="">
+          <div className="art-col-1">
             <div className="">
               <div>
                 <div className="is-flex">
@@ -46,7 +46,8 @@ const Post = () => {
                     </p>
                   </figure>
                   <div className="is-flex">
-                    <span className="user-name">{post.author.username}</span>
+                    {/* <span className="user-name">{post.author.username}</span> */}
+                    <span className="user-name">K Sigei</span>
                   </div>
 
                   <small>
@@ -96,7 +97,7 @@ const Post = () => {
               </div>
             </nav>
           </div>
-          <section>
+          <section className="art-col-2">
             <figure className="art-img">
               <img src={post.image} alt="Saucewire posts" />
             </figure>

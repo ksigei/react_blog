@@ -1,3 +1,12 @@
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
 .App {
     display: flex;    
 }
